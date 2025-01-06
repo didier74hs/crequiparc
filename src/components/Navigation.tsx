@@ -8,8 +8,9 @@ const Navigation = () => {
 
   const links = [
     { path: "/", label: "Accueil" },
+    { path: "/descriptif", label: "Descriptif" },
     { path: "/photos", label: "Photos" },
-    { path: "/home-staging", label: "Home Staging" },
+    { path: "/home-staging", label: "Photos Home Staging" },
   ];
 
   const isActive = (path: string) => location.pathname === path;

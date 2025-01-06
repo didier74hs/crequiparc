@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navigation from "./components/Navigation";
 import Index from "./pages/Index";
+import Descriptif from "./pages/Descriptif";
 import Photos from "./pages/Photos";
 import HomeStaging from "./pages/HomeStaging";
 
@@ -19,6 +20,7 @@ const App = () => (
         <Navigation />
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/descriptif" element={<Descriptif />} />
           <Route path="/photos" element={<Photos />} />
           <Route path="/home-staging" element={<HomeStaging />} />
         </Routes>
