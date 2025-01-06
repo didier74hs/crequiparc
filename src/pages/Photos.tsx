@@ -17,7 +17,10 @@ const Photos = () => {
       src: "https://images.unsplash.com/photo-1501127122-f385ca6ddd9d",
       alt: "Chambre",
     },
-    // Ajoutez ici vos vraies photos
+    {
+      src: "/lovable-uploads/32e8c00d-c5e1-4d50-af57-e630e9586bd1.png",
+      alt: "Hall d'entrée",
+    },
   ];
 
   return (
@@ -52,7 +55,6 @@ const Photos = () => {
         </div>
       </div>
 
-      {/* Modal pour l'image en grand */}
       {selectedImage && (
         <div
           className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4"
