@@ -6,14 +6,6 @@ const Photos = () => {
 
   const photos = [
     {
-      src: "/lovable-uploads/c3b51f52-bbc3-4a88-ae0e-0b5e47c7b37b.png",
-      alt: "Chambre 1",
-    },
-    {
-      src: "/lovable-uploads/7799294a-f29c-4d57-926e-8f322bce5638.png",
-      alt: "Chambre 2",
-    },
-    {
       src: "/lovable-uploads/ce534b6e-5a8e-4aef-87fa-cf67d8b008e5.png",
       alt: "Salon 1",
     },
@@ -38,6 +30,18 @@ const Photos = () => {
       alt: "Salon 6",
     },
     {
+      src: "/lovable-uploads/79540ec2-7dbe-48c4-86e4-844554cf260b.png",
+      alt: "Chambre 3",
+    },
+    {
+      src: "/lovable-uploads/c3b51f52-bbc3-4a88-ae0e-0b5e47c7b37b.png",
+      alt: "Chambre 1",
+    },
+    {
+      src: "/lovable-uploads/7799294a-f29c-4d57-926e-8f322bce5638.png",
+      alt: "Chambre 2",
+    },
+    {
       src: "/lovable-uploads/67006b9a-15ee-4f84-b929-096185df0f64.png",
       alt: "Salle de bain",
     },
@@ -49,6 +53,10 @@ const Photos = () => {
         <h1 className="font-display text-3xl md:text-4xl text-estate-dark mb-8 text-center">
           Photos de l'Appartement Vide
         </h1>
+        
+        <p className="text-estate-dark text-lg mb-12 text-center max-w-3xl mx-auto">
+          Rénovation récente : peintures neuves dans l'entrée, le dégagement desservant les chambres 1 et 2 ainsi que dans les deux chambres. Les teintes semblables à celles des photos apportent luminosité et fraîcheur à ces espaces de vie. Ces améliorations ne sont pas présentes sur les photos qui suivent qui ont été prises en amont.
+        </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {photos.map((photo, index) => (
