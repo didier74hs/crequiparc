@@ -10,6 +10,7 @@ const Navigation = () => {
     { path: "/", label: "Accueil" },
     { path: "/descriptif", label: "Descriptif" },
     { path: "/photos", label: "Photos" },
+    { path: "/video", label: "Vidéo" },
     { path: "/home-staging", label: "Photos Home Staging" },
     { path: "/plan", label: "Plan" },
     { path: "/situation", label: "Situation Géographique" },

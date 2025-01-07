@@ -55,7 +55,7 @@ const Photos = () => {
         </h1>
         
         <p className="text-estate-dark text-lg mb-12 text-center max-w-3xl mx-auto">
-          Rénovation récente : peintures neuves dans l'entrée, le dégagement desservant les chambres 1 et 2 ainsi que dans les deux chambres. Les teintes semblables à celles des photos apportent luminosité et fraîcheur à ces espaces de vie. Ces améliorations ne sont pas présentes sur les photos qui suivent qui ont été prises en amont.
+          Rénovation récente : peintures neuves dans l'entrée, le dégagement desservant les chambres 1 et 2 ainsi que dans les deux chambres. Les teintes semblables à celles des photos apportent luminosité et fraîcheur à ces espaces de vie. Ces améliorations ne sont pas présentes sur les photos qui suivent, celles-ci ayant été prises avant les travaux.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
