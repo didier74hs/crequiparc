@@ -10,7 +10,7 @@ const Video = () => {
         
         <div className="text-estate-dark text-lg mb-12 text-center max-w-3xl mx-auto">
           <p className="mb-8">
-            Merci de cliquer sur le lien suivant afin de vous permettre de visiter virtuellement l'appartement. Cette vidéo n'est pas professionnelle, mais à l'avantage de vous permettre d'avoir 1 idée de l'appartement avant les travaux de peinture et de vous demander si vous souhaitez le visiter réellement à présent. Merci pour votre indulgence quant à sa qualité.
+            Merci de cliquer sur la photo ci-dessous afin de vous permettre de visiter l'appartement. Cette vidéo n'est pas professionnelle, mais à l'avantage de vous permettre d'avoir une idée de l'appartement avant les travaux de peinture et de vous demander si vous souhaitez le visiter réellement à présent. Merci pour votre indulgence quant à sa qualité.
           </p>
           
           <a 
