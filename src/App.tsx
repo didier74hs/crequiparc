@@ -8,6 +8,8 @@ import Index from "./pages/Index";
 import Descriptif from "./pages/Descriptif";
 import Photos from "./pages/Photos";
 import HomeStaging from "./pages/HomeStaging";
+import Plan from "./pages/Plan";
+import SituationGeographique from "./pages/SituationGeographique";
 
 const queryClient = new QueryClient();
 
@@ -23,6 +25,8 @@ const App = () => (
           <Route path="/descriptif" element={<Descriptif />} />
           <Route path="/photos" element={<Photos />} />
           <Route path="/home-staging" element={<HomeStaging />} />
+          <Route path="/plan" element={<Plan />} />
+          <Route path="/situation" element={<SituationGeographique />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
