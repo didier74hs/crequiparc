@@ -1,4 +1,4 @@
-import { HandHeart } from "lucide-react";
+import React from "react";
 
 const Video = () => {
   return (
@@ -31,10 +31,8 @@ const Video = () => {
                   <div className="absolute -inset-4 w-16 h-16 bg-white/30 rounded-full animate-ping" />
                   {/* Inner pulsing circle */}
                   <div className="absolute -inset-3 w-14 h-14 bg-white/40 rounded-full animate-ping animation-delay-150" />
-                  {/* Static center circle with icon */}
-                  <div className="relative w-12 h-12 bg-white/80 rounded-full flex items-center justify-center">
-                    <HandHeart className="w-6 h-6 text-estate-dark" />
-                  </div>
+                  {/* Static center circle */}
+                  <div className="relative w-12 h-12 bg-white/80 rounded-full" />
                 </div>
               </div>
             </div>
