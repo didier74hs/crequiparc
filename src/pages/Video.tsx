@@ -1,4 +1,4 @@
-import { ExternalLink } from "lucide-react";
+import { HandHeart } from "lucide-react";
 
 const Video = () => {
   return (
@@ -33,7 +33,7 @@ const Video = () => {
                   <div className="absolute -inset-3 w-14 h-14 bg-white/40 rounded-full animate-ping animation-delay-150" />
                   {/* Static center circle with icon */}
                   <div className="relative w-12 h-12 bg-white/80 rounded-full flex items-center justify-center">
-                    <ExternalLink className="w-6 h-6 text-estate-dark" />
+                    <HandHeart className="w-6 h-6 text-estate-dark" />
                   </div>
                 </div>
               </div>
