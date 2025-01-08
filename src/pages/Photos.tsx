@@ -45,6 +45,14 @@ const Photos = () => {
       src: "/lovable-uploads/67006b9a-15ee-4f84-b929-096185df0f64.png",
       alt: "Salle de bain",
     },
+    {
+      src: "/lovable-uploads/75fa4c5b-c768-4b11-a33f-89e1bb093356.png",
+      alt: "Cuisine",
+    },
+    {
+      src: "/lovable-uploads/5dd4db30-79e8-4f0e-8d40-94e428789e51.png",
+      alt: "Cave",
+    },
   ];
 
   return (
