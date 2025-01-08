@@ -25,8 +25,17 @@ const Video = () => {
                 alt="Cliquez pour voir la vidéo"
                 className="rounded-lg shadow-lg max-w-2xl mx-auto"
               />
-              <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity rounded-lg flex items-center justify-center">
-                <ExternalLink className="text-white w-12 h-12" />
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="relative">
+                  {/* Outer pulsing circle */}
+                  <div className="absolute -inset-4 w-16 h-16 bg-white/30 rounded-full animate-ping" />
+                  {/* Inner pulsing circle */}
+                  <div className="absolute -inset-3 w-14 h-14 bg-white/40 rounded-full animate-ping animation-delay-150" />
+                  {/* Static center circle with icon */}
+                  <div className="relative w-12 h-12 bg-white/80 rounded-full flex items-center justify-center">
+                    <ExternalLink className="w-6 h-6 text-estate-dark" />
+                  </div>
+                </div>
               </div>
             </div>
           </a>
