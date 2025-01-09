@@ -62,11 +62,11 @@ const handler = async (req: Request): Promise<Response> => {
         Authorization: `Bearer ${RESEND_API_KEY}`,
       },
       body: JSON.stringify({
-        from: "dnet6@free.fr", // Using the verified email address
-        to: ["dnet6@free.fr"], // Sending to the verified email address
+        from: "Appartement Tête d'Or <onboarding@resend.dev>",
+        to: ["dnet6@free.fr"],
         subject: "Nouveau message de contact - Appartement Tête d'Or",
         html: emailHtml,
-        reply_to: contactRequest.email // Add reply-to header with the contact's email
+        reply_to: contactRequest.email
       }),
     });
 
