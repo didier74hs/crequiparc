@@ -2,8 +2,6 @@ import { serve } from "https://deno.land/std@0.190.0/http/server.ts";
 import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
 
 const RESEND_API_KEY = Deno.env.get("RESEND_API_KEY");
-const SUPABASE_URL = Deno.env.get("SUPABASE_URL");
-const SUPABASE_SERVICE_ROLE_KEY = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY");
 
 const corsHeaders = {
   "Access-Control-Allow-Origin": "*",
@@ -18,11 +16,6 @@ interface ContactRequest {
   message: string;
 }
 
-const supabase = createClient(
-  SUPABASE_URL!,
-  SUPABASE_SERVICE_ROLE_KEY!
-);
-
 const handler = async (req: Request): Promise<Response> => {
   // Handle CORS preflight requests
   if (req.method === "OPTIONS") {
@@ -32,6 +25,11 @@ const handler = async (req: Request): Promise<Response> => {
   try {
     const contactRequest: ContactRequest = await req.json();
     console.log("Received contact request:", contactRequest);
+
+    // Create Supabase client
+    const supabaseUrl = Deno.env.get("SUPABASE_URL")!;
+    const supabaseKey = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!;
+    const supabase = createClient(supabaseUrl, supabaseKey);
 
     // Store the message in the database
     const { data: insertedData, error: dbError } = await supabase
@@ -64,10 +62,11 @@ const handler = async (req: Request): Promise<Response> => {
         Authorization: `Bearer ${RESEND_API_KEY}`,
       },
       body: JSON.stringify({
-        from: "Appartement Tête d'Or <onboarding@resend.dev>",
-        to: ["dnet1@gmx.fr"],
+        from: "dnet6@free.fr", // Using the verified email address
+        to: ["dnet6@free.fr"], // Sending to the verified email address
         subject: "Nouveau message de contact - Appartement Tête d'Or",
         html: emailHtml,
+        reply_to: contactRequest.email // Add reply-to header with the contact's email
       }),
     });
 
