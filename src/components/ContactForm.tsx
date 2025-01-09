@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Mail } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import { supabase } from "@/integrations/supabase/client";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -9,16 +10,35 @@ const ContactForm = () => {
     phone: "",
     message: "",
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Ici vous pourrez ajouter la logique d'envoi d'email
-    toast({
-      title: "Message envoyé",
-      description: "Nous vous recontacterons dans les plus brefs délais.",
-    });
-    setFormData({ name: "", email: "", phone: "", message: "" });
+    setIsSubmitting(true);
+
+    try {
+      const { error } = await supabase.functions.invoke('send-contact-email', {
+        body: formData
+      });
+
+      if (error) throw error;
+
+      toast({
+        title: "Message envoyé",
+        description: "Nous vous recontacterons dans les plus brefs délais.",
+      });
+      setFormData({ name: "", email: "", phone: "", message: "" });
+    } catch (error) {
+      console.error('Error sending message:', error);
+      toast({
+        title: "Erreur",
+        description: "Une erreur est survenue lors de l'envoi du message. Veuillez réessayer.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -86,9 +106,10 @@ const ContactForm = () => {
 
         <button
           type="submit"
-          className="w-full bg-estate-sage text-white py-2 px-4 rounded-md hover:bg-estate-dark transition-colors duration-200"
+          disabled={isSubmitting}
+          className="w-full bg-estate-sage text-white py-2 px-4 rounded-md hover:bg-estate-dark transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
         >
-          Envoyer
+          {isSubmitting ? "Envoi en cours..." : "Envoyer"}
         </button>
       </form>
     </div>
