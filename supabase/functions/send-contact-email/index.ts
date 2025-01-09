@@ -31,16 +31,21 @@ const handler = async (req: Request): Promise<Response> => {
 
   try {
     const contactRequest: ContactRequest = await req.json();
-    
+    console.log("Received contact request:", contactRequest);
+
     // Store the message in the database
-    const { error: dbError } = await supabase
+    const { data: insertedData, error: dbError } = await supabase
       .from('contact_messages')
-      .insert([contactRequest]);
+      .insert([contactRequest])
+      .select()
+      .single();
 
     if (dbError) {
       console.error('Database error:', dbError);
-      throw new Error('Failed to store message in database');
+      throw new Error(`Failed to store message in database: ${dbError.message}`);
     }
+
+    console.log('Successfully stored message in database:', insertedData);
 
     // Send email via Resend
     const emailHtml = `
@@ -68,10 +73,14 @@ const handler = async (req: Request): Promise<Response> => {
 
     if (!res.ok) {
       const error = await res.text();
+      console.error('Resend API error:', error);
       throw new Error(`Failed to send email: ${error}`);
     }
 
-    return new Response(JSON.stringify({ success: true }), {
+    const emailResponse = await res.json();
+    console.log('Successfully sent email:', emailResponse);
+
+    return new Response(JSON.stringify({ success: true, data: insertedData }), {
       headers: { ...corsHeaders, "Content-Type": "application/json" },
       status: 200,
     });
