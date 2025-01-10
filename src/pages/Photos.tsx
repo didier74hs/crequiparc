@@ -1,9 +1,6 @@
-import { useState } from "react";
-import { motion } from "framer-motion";
+import { AnimatedPhotoViewer } from "@/components/AnimatedPhotoViewer";
 
 const Photos = () => {
-  const [selectedImage, setSelectedImage] = useState<string | null>(null);
-
   const photos = [
     {
       src: "/lovable-uploads/ce534b6e-5a8e-4aef-87fa-cf67d8b008e5.png",
@@ -66,51 +63,8 @@ const Photos = () => {
           Rénovation récente : peintures neuves dans l'entrée, le dégagement desservant les chambres, les toilettes indépendantes, ainsi que dans les deux chambres de la partie sud de l'appartement. Les teintes semblables à celles des photos apportent luminosité et fraîcheur à ces espaces de vie. Ces améliorations ne sont pas présentes sur les photos qui suivent, celles-ci ayant été prises avant les travaux.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {photos.map((photo, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.1 }}
-              className="relative group cursor-pointer"
-              onClick={() => setSelectedImage(photo.src)}
-            >
-              <div className="aspect-w-4 aspect-h-3">
-                <img
-                  src={photo.src}
-                  alt={photo.alt}
-                  className="object-cover rounded-lg shadow-md group-hover:opacity-90 transition-opacity"
-                />
-              </div>
-              <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity rounded-lg flex items-center justify-center">
-                <p className="text-white font-medium">{photo.alt}</p>
-              </div>
-            </motion.div>
-          ))}
-        </div>
+        <AnimatedPhotoViewer photos={photos} />
       </div>
-
-      {selectedImage && (
-        <div
-          className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4"
-          onClick={() => setSelectedImage(null)}
-        >
-          <div className="relative max-w-4xl w-full">
-            <img
-              src={selectedImage}
-              alt="Vue agrandie"
-              className="w-full h-auto rounded-lg"
-            />
-            <button
-              className="absolute top-4 right-4 text-white hover:text-gray-300"
-              onClick={() => setSelectedImage(null)}
-            >
-              Fermer
-            </button>
-          </div>
-        </div>
-      )}
     </div>
   );
 };
