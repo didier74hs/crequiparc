@@ -1,4 +1,4 @@
-import AnimatedPhotoViewer from "@/components/AnimatedPhotoViewer";
+import { AnimatedPhotoViewer } from "@/components/AnimatedPhotoViewer";
 
 const Photos = () => {
   const photos = [
