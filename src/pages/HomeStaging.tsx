@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
+import AnimatedPhotoViewer from "@/components/AnimatedPhotoViewer";
 
 const HomeStaging = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -77,7 +78,6 @@ const HomeStaging = () => {
         </div>
       </div>
 
-      {/* Modal pour l'image en grand */}
       {selectedImage && (
         <div
           className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4"
@@ -98,6 +98,8 @@ const HomeStaging = () => {
           </div>
         </div>
       )}
+
+      <AnimatedPhotoViewer photos={stagingPhotos} />
     </div>
   );
 };
