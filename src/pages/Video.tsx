@@ -14,7 +14,7 @@ const Video = () => {
           </p>
           
           <a 
-            href="https://asse.quickconnect.to/d/s/v24gp0NdUl0UUoPAd44jzL12CZcXr5so/rJIjrFhNb5Lv6UvJsnTkGMN9kAvQ3opZ-frGgAq7lvgo"
+            href="https://www.dropbox.com/scl/fi/72mfi55zg04g50vnkxnrj/Vid-o-Cr-qui-ok.mp4?rlkey=kblgqljunocu16j4zfczhb6k2&st=49gz83jt&dl=0"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block hover:opacity-90 transition-opacity"
