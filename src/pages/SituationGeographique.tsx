@@ -7,7 +7,7 @@ const SituationGeographique = () => {
         </h1>
         <div className="max-w-4xl mx-auto">
           <img
-            src="/lovable-uploads/43b95c23-87f6-4925-8873-0e1d0a5bd6c6.png"
+            src="/crequiparc/lovable-uploads/43b95c23-87f6-4925-8873-0e1d0a5bd6c6.png"
             alt="Situation géographique de l'appartement"
             className="w-full h-auto rounded-lg shadow-lg"
           />
