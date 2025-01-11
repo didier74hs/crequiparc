@@ -53,6 +53,22 @@ const Photos = () => {
       src: "/lovable-uploads/5dd4db30-79e8-4f0e-8d40-94e428789e51.png",
       alt: "Cave",
     },
+    {
+      src: "/lovable-uploads/bc307717-074f-4ba6-aab8-fe2610edf6e8.png",
+      alt: "Local commun pour vélo",
+    },
+    {
+      src: "/lovable-uploads/45055850-8262-4f40-bc70-12b9b3bd70df.png",
+      alt: "Petite table sur balcon",
+    },
+    {
+      src: "/lovable-uploads/99f217bf-d7a3-4718-9402-64f3e61bced8.png",
+      alt: "Vue du balcon côté Croix-Rousse",
+    },
+    {
+      src: "/lovable-uploads/159fc6a1-b434-45d6-a7e3-7032e77f683a.png",
+      alt: "Vue du balcon côté parc",
+    },
   ];
 
   return (
