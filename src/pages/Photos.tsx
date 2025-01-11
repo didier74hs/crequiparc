@@ -6,51 +6,51 @@ const Photos = () => {
 
   const photos = [
     {
-      src: "/crequiparc/lovable-uploads/ce534b6e-5a8e-4aef-87fa-cf67d8b008e5.png",
+      src: "/lovable-uploads/ce534b6e-5a8e-4aef-87fa-cf67d8b008e5.png",
       alt: "Salon 1",
     },
     {
-      src: "/crequiparc/lovable-uploads/3e09e151-a1a5-4588-88c9-28a648ec2ce9.png",
+      src: "/lovable-uploads/3e09e151-a1a5-4588-88c9-28a648ec2ce9.png",
       alt: "Salon 2",
     },
     {
-      src: "/crequiparc/lovable-uploads/39d2287b-4211-4023-8653-639f68f508ba.png",
+      src: "/lovable-uploads/39d2287b-4211-4023-8653-639f68f508ba.png",
       alt: "Salon 3",
     },
     {
-      src: "/crequiparc/lovable-uploads/44815cbb-a705-4f8f-8e2a-12a2c694f2f3.png",
+      src: "/lovable-uploads/44815cbb-a705-4f8f-8e2a-12a2c694f2f3.png",
       alt: "Salon 4",
     },
     {
-      src: "/crequiparc/lovable-uploads/1b6e5fb2-c68b-42f4-bea1-159abfefe435.png",
+      src: "/lovable-uploads/1b6e5fb2-c68b-42f4-bea1-159abfefe435.png",
       alt: "Salon 5",
     },
     {
-      src: "/crequiparc/lovable-uploads/6ce8c256-736d-4109-bb23-5e40c4979eb1.png",
+      src: "/lovable-uploads/6ce8c256-736d-4109-bb23-5e40c4979eb1.png",
       alt: "Salon 6",
     },
     {
-      src: "/crequiparc/lovable-uploads/79540ec2-7dbe-48c4-86e4-844554cf260b.png",
+      src: "/lovable-uploads/79540ec2-7dbe-48c4-86e4-844554cf260b.png",
       alt: "Chambre 3",
     },
     {
-      src: "/crequiparc/lovable-uploads/c3b51f52-bbc3-4a88-ae0e-0b5e47c7b37b.png",
+      src: "/lovable-uploads/c3b51f52-bbc3-4a88-ae0e-0b5e47c7b37b.png",
       alt: "Chambre 1",
     },
     {
-      src: "/crequiparc/lovable-uploads/7799294a-f29c-4d57-926e-8f322bce5638.png",
+      src: "/lovable-uploads/7799294a-f29c-4d57-926e-8f322bce5638.png",
       alt: "Chambre 2",
     },
     {
-      src: "/crequiparc/lovable-uploads/67006b9a-15ee-4f84-b929-096185df0f64.png",
+      src: "/lovable-uploads/67006b9a-15ee-4f84-b929-096185df0f64.png",
       alt: "Salle de bain",
     },
     {
-      src: "/crequiparc/lovable-uploads/75fa4c5b-c768-4b11-a33f-89e1bb093356.png",
+      src: "/lovable-uploads/75fa4c5b-c768-4b11-a33f-89e1bb093356.png",
       alt: "Cuisine",
     },
     {
-      src: "/crequiparc/lovable-uploads/5dd4db30-79e8-4f0e-8d40-94e428789e51.png",
+      src: "/lovable-uploads/5dd4db30-79e8-4f0e-8d40-94e428789e51.png",
       alt: "Cave",
     },
   ];

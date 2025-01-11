@@ -21,14 +21,17 @@ const Video = () => {
           >
             <div className="relative group">
               <img 
-                src="/crequiparc/lovable-uploads/ce534b6e-5a8e-4aef-87fa-cf67d8b008e5.png"
+                src="/lovable-uploads/ce534b6e-5a8e-4aef-87fa-cf67d8b008e5.png"
                 alt="Cliquez pour voir la vidéo"
                 className="rounded-lg shadow-lg max-w-2xl mx-auto"
               />
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="relative">
+                  {/* Outer pulsing circle */}
                   <div className="absolute -inset-4 w-16 h-16 bg-white/30 rounded-full animate-ping" />
+                  {/* Inner pulsing circle */}
                   <div className="absolute -inset-3 w-14 h-14 bg-white/40 rounded-full animate-ping animation-delay-150" />
+                  {/* Static center circle */}
                   <div className="relative w-12 h-12 bg-white/80 rounded-full" />
                 </div>
               </div>
