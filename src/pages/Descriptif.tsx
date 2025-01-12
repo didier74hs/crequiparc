@@ -84,6 +84,21 @@ const Descriptif = () => {
             </ul>
           </section>
 
+          {/* Quelques précisions */}
+          <section className="bg-estate-light rounded-lg p-6">
+            <h2 className="font-display text-2xl text-estate-dark mb-4">
+              Quelques précisions
+            </h2>
+            <div className="space-y-4 text-gray-700">
+              <p className="leading-relaxed">
+                Dans les informations techniques, il est mentionné que le système de chauffage est au sol. Toutefois, pour clarifier, il convient de préciser qu'au cours des années 1960, certains immeubles, dont celui-ci, ont été conçus avec un système de chauffage intégré au plafond. Ce choix architectural visait à offrir un confort thermique optimal en évitant de perturber les personnes sensibles à la chaleur au niveau des jambes. C'est également pour cette raison que des vannes de régulation sont situées en hauteur, notamment dans le placard de la salle à manger, permettant d'ajuster la température pièce par pièce.
+              </p>
+              <p className="leading-relaxed">
+                Par ailleurs, ce type de chauffage présente un avantage notable: il est possible de recouvrir le sol en marbre (si on est pas "fan") avec le matériau de votre choix (parquet, carrelage, etc.) sans compromettre l'efficacité du système de chauffage de l'appartement.
+              </p>
+            </div>
+          </section>
+
           {/* Annexes */}
           <section className="bg-white shadow-md rounded-lg p-6 mb-8">
             <h2 className="font-display text-2xl text-estate-dark mb-4">
@@ -99,21 +114,6 @@ const Descriptif = () => {
                 En option, un garage double (places en enfilade) équipé d'une prise pour véhicule électrique
               </li>
             </ul>
-          </section>
-
-          {/* Quelques précisions */}
-          <section className="bg-estate-light rounded-lg p-6">
-            <h2 className="font-display text-2xl text-estate-dark mb-4">
-              Quelques précisions
-            </h2>
-            <div className="space-y-4 text-gray-700">
-              <p className="leading-relaxed">
-                Dans les informations techniques, il est mentionné que le système de chauffage est au sol. Toutefois, pour clarifier, il convient de préciser qu'au cours des années 1960, certains immeubles, dont celui-ci, ont été conçus avec un système de chauffage intégré au plafond. Ce choix architectural visait à offrir un confort thermique optimal en évitant de perturber les personnes sensibles à la chaleur au niveau des jambes. C'est également pour cette raison que des vannes de régulation sont situées en hauteur, notamment dans le placard de la salle à manger, permettant d'ajuster la température pièce par pièce.
-              </p>
-              <p className="leading-relaxed">
-                Par ailleurs, ce type de chauffage présente un avantage notable: il est possible de recouvrir le sol en marbre (si on est pas "fan") avec le matériau de votre choix (parquet, carrelage, etc.) sans compromettre l'efficacité du système de chauffage de l'appartement.
-              </p>
-            </div>
           </section>
         </div>
       </div>
