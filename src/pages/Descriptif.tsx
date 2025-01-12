@@ -24,15 +24,15 @@ const Descriptif = () => {
             </h2>
             <ul className="space-y-4 text-gray-700">
               <li className="flex gap-2">
-                <span className="font-medium">Superficie :</span>
+                <span className="font-medium">Superficie:</span>
                 122 m² habitables + 21 m² de balcon
               </li>
               <li className="flex gap-2">
-                <span className="font-medium">Étages :</span>
+                <span className="font-medium">Étages:</span>
                 4e étage avec ascenseur dans un immeuble sécurisé avec gardien
               </li>
               <li className="flex gap-2">
-                <span className="font-medium">Exposition :</span>
+                <span className="font-medium">Exposition:</span>
                 Appartement en angle, orienté sud et est, garantissant une excellente luminosité
               </li>
             </ul>
@@ -58,19 +58,19 @@ const Descriptif = () => {
             </h2>
             <ul className="space-y-3 text-gray-700">
               <li className="flex gap-2">
-                <span className="font-medium">Chauffage collectif :</span>
+                <span className="font-medium">Chauffage collectif:</span>
                 Au sol, invisible (aucun radiateur)
               </li>
               <li className="flex gap-2">
-                <span className="font-medium">Eau chaude et froide :</span>
+                <span className="font-medium">Eau chaude et froide:</span>
                 Incluses dans les charges de copropriété
               </li>
               <li className="flex gap-2">
-                <span className="font-medium">Gaz de ville :</span>
+                <span className="font-medium">Gaz de ville:</span>
                 Optionnel pour la cuisine
               </li>
               <li className="flex flex-col gap-2">
-                <span className="font-medium">Charges de copropriété :</span>
+                <span className="font-medium">Charges de copropriété:</span>
                 <p className="text-gray-700 leading-relaxed">
                   Les trois points mentionnés précédemment sont déjà inclus dans les charges de copropriété, auxquels s'ajoutent les services de qualité offerts par le gardien. Celui-ci assure l'entretien régulier de l'immeuble ainsi que des espaces verts situés à l'avant de la résidence. Par conséquent, aucune intervention extérieure ni coût supplémentaire ne sont nécessaires pour ces prestations.
                 </p>
@@ -80,6 +80,23 @@ const Descriptif = () => {
                 <p className="text-gray-700 leading-relaxed mt-2">
                   Il est important de souligner cet aspect lors de la comparaison avec d'autres biens immobiliers. En effet, certaines personnes omettent d'inclure dans leur analyse des éléments tels que les frais d'entretien de l'immeuble, des espaces verts ou encore le coût du chauffage (notamment s'il est électrique). Lorsqu'une comparaison équitable est effectuée, le montant des charges de copropriété pour cet immeuble se situe dans la moyenne pour ce type de bien, tout en offrant l'avantage notable d'un gardien sur place.
                 </p>
+              </li>
+            </ul>
+          </section>
+
+          {/* Annexes */}
+          <section className="bg-white shadow-md rounded-lg p-6 mb-8">
+            <h2 className="font-display text-2xl text-estate-dark mb-4">
+              Annexes
+            </h2>
+            <ul className="space-y-3 text-gray-700">
+              <li className="flex gap-2">
+                <span className="font-medium">Cave:</span>
+                Grande cave incluse avec l'appartement
+              </li>
+              <li className="flex gap-2">
+                <span className="font-medium">Garage:</span>
+                En option, un garage double (places en enfilade) équipé d'une prise pour véhicule électrique
               </li>
             </ul>
           </section>
@@ -97,23 +114,6 @@ const Descriptif = () => {
                 Par ailleurs, ce type de chauffage présente un avantage notable: il est possible de recouvrir le sol en marbre (si on est pas "fan") avec le matériau de votre choix (parquet, carrelage, etc.) sans compromettre l'efficacité du système de chauffage de l'appartement.
               </p>
             </div>
-          </section>
-
-          {/* Annexes */}
-          <section className="bg-white shadow-md rounded-lg p-6 mb-8">
-            <h2 className="font-display text-2xl text-estate-dark mb-4">
-              Annexes
-            </h2>
-            <ul className="space-y-3 text-gray-700">
-              <li className="flex gap-2">
-                <span className="font-medium">Cave :</span>
-                Grande cave incluse avec l'appartement
-              </li>
-              <li className="flex gap-2">
-                <span className="font-medium">Garage :</span>
-                En option, un garage double (places en enfilade) équipé d'une prise pour véhicule électrique
-              </li>
-            </ul>
           </section>
         </div>
       </div>

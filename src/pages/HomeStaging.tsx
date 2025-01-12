@@ -6,6 +6,31 @@ const HomeStaging = () => {
 
   const stagingPhotos = [
     {
+      src: "/lovable-uploads/dc95390b-e580-4e19-8952-71c0aec1c151.png",
+      alt: "Salon lumineux",
+      description: "Salon lumineux avec moulures et parquet",
+    },
+    {
+      src: "/lovable-uploads/bf856a2c-deff-4dce-8e88-ec4219619c04.png",
+      alt: "Salon avec canapé bleu",
+      description: "Salon avec canapé bleu et vue dégagée",
+    },
+    {
+      src: "/lovable-uploads/5f70cfb4-5e9c-48c3-8b18-2bcb09436e85.png",
+      alt: "Salon avec canapé gris",
+      description: "Salon confortable avec grand canapé d'angle",
+    },
+    {
+      src: "/lovable-uploads/d80fe3b6-fe79-40b8-8159-125f8b75641b.png",
+      alt: "Pièce à vivre",
+      description: "Pièce à vivre avec belle luminosité",
+    },
+    {
+      src: "/lovable-uploads/97cdf537-19e1-40d0-b787-f94695201192.png",
+      alt: "Salon avec parquet",
+      description: "Salon avec parquet et moulures",
+    },
+    {
       src: "/lovable-uploads/c7f92949-6eb9-4ac0-b674-e9aeabe06c34.png",
       alt: "Chambre enfant",
       description: "Chambre d'enfant lumineuse avec balcon",
