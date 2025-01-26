@@ -13,14 +13,13 @@ import Plan from "./pages/Plan";
 import SituationGeographique from "./pages/SituationGeographique";
 
 const queryClient = new QueryClient();
-const basename = import.meta.env.DEV ? '/' : '/crequiparc';
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter basename={basename}>
+      <BrowserRouter>
         <Navigation />
         <Routes>
           <Route path="/" element={<Index />} />

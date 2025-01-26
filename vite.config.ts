@@ -9,7 +9,6 @@ export default defineConfig(({ mode }) => ({
     mode === 'development' &&
     componentTagger(),
   ].filter(Boolean),
-  base: process.env.GITHUB_PAGES ? '/crequiparc/' : '/',
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
