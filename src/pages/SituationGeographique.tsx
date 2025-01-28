@@ -5,7 +5,7 @@ const SituationGeographique = () => {
         <h1 className="font-display text-3xl md:text-4xl text-estate-dark mb-8 text-center">
           Situation Géographique
         </h1>
-        <div className="max-w-4xl mx-auto space-y-8">
+        <div className="max-w-4xl mx-auto space-y-16">
           <img
             src="/lovable-uploads/43b95c23-87f6-4925-8873-0e1d0a5bd6c6.png"
             alt="Situation géographique de l'appartement"
