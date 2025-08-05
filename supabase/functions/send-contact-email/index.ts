@@ -63,7 +63,7 @@ const handler = async (req: Request): Promise<Response> => {
       },
       body: JSON.stringify({
         from: "Appartement Tête d'Or <onboarding@resend.dev>",
-        to: ["dnet6@free.fr"],
+        to: ["dnet1@gmx.fr"],
         subject: "Nouveau message de contact - Appartement Tête d'Or",
         html: emailHtml,
         reply_to: contactRequest.email
