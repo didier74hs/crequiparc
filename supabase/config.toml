@@ -1,5 +1,1 @@
-# Project ID from the Supabase dashboard
-project_id = "jnsqqhhfoiyyyuubhmut"
-
-[functions.send-contact-email]
-verify_jwt = false
+project_id = "pjzdqecgquoptutziywj"
