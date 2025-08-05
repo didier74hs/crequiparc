@@ -25,6 +25,7 @@ const handler = async (req: Request): Promise<Response> => {
   try {
     const contactRequest: ContactRequest = await req.json();
     console.log("Received contact request:", contactRequest);
+    console.log("RESEND_API_KEY is configured:", !!RESEND_API_KEY);
 
     // Create Supabase client
     const supabaseUrl = Deno.env.get("SUPABASE_URL")!;

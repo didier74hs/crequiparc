@@ -18,10 +18,12 @@ const ContactForm = () => {
     setIsSubmitting(true);
 
     try {
-      const { error } = await supabase.functions.invoke('send-contact-email', {
+      console.log('Sending contact form data:', formData);
+      const { data, error } = await supabase.functions.invoke('send-contact-email', {
         body: formData
       });
 
+      console.log('Response from function:', { data, error });
       if (error) throw error;
 
       toast({
