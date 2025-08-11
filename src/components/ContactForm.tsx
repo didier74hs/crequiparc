@@ -19,12 +19,18 @@ const ContactForm = () => {
 
     try {
       console.log('Sending contact form data:', formData);
+      console.log('Supabase URL:', 'https://pjzdqecgquoptutziywj.supabase.co');
+      
       const { data, error } = await supabase.functions.invoke('send-contact-email', {
         body: formData
       });
 
       console.log('Response from function:', { data, error });
-      if (error) throw error;
+      
+      if (error) {
+        console.error('Supabase function error:', error);
+        throw error;
+      }
 
       toast({
         title: "Message envoyé",
